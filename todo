@@ -1,2 +1,1 @@
-memory variables in java command
-use a different jar for mods
+Delete start-server.sh and any files created when building image in /opt/minecraft if they exist. These won't be replaced when updating. 
