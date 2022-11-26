@@ -12,6 +12,7 @@ To use an existing world file, stop the container (`docker stop minecraft`) then
 Do the same process for adding/updating any custom .jar files or server.jar. 
 
 You can find the location of minecraft-vol by running:
+
 ` docker volume inspect --format '{{.Mountpoint}}' minecraft-vol`
 
 This container **does not include backups**! Make sure to backup the docker volume. 
