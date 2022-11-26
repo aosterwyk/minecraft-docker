@@ -7,8 +7,10 @@ mkdir /opt/minecraft && \
 wget https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar -O /opt/minecraft/server.jar && \
 echo "eula=true" > /opt/minecraft/eula.txt
 
+COPY start-server.sh /opt/minecraft/start-server.sh
+
 VOLUME /opt/minecraft
 WORKDIR /opt/minecraft
-ENTRYPOINT java -Xmx3G -Xms2G -jar /opt/minecraft/server.jar nogui
+ENTRYPOINT /opt/minecraft/start-server.sh 
 
 EXPOSE 25565/tcp
