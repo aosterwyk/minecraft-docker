@@ -1,6 +1,6 @@
 #  minecraft-docker
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/aosterwyk/minecraft-docker?sort=semver)](https://github.com/aosterwyk/minecraft-docker/releases) [![GitHub last commit](https://img.shields.io/github/last-commit/aosterwyk/minecraft-docker)](https://github.com/aosterwyk/minecraft-docker/commits/master) [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/aosterwyk/minecraft-docker/dev?label=last%20commit%20%28dev%29)](https://github.com/aosterwyk/minecraft-docker/commits/dev) [![Discord](https://img.shields.io/discord/90687557523771392?color=000000&label=%20&logo=discord)](https://discord.gg/QNppY7T) [![Twitch Status](https://img.shields.io/twitch/status/varixx?label=%20&logo=twitch)](https://twitch.tv/VariXx) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/aosterwyk/minecraft-docker)](https://github.com/aosterwyk/minecraft-docker/commits/master) [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/aosterwyk/minecraft-docker/dev?label=last%20commit%20%28dev%29)](https://github.com/aosterwyk/minecraft-docker/commits/dev) 
 
 This project was created to learn more about Docker. 
 
