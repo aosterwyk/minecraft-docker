@@ -37,7 +37,7 @@ docker run --name=minecraft \
 
 **-v**: Mounts minecraft docker volume to /opt/minecraft.
 
-**-p**: Publish minecraft server port (25565). Change this if needed. 
+**-p**: Publish minecraft server port (25565). Change the first one if you want to use a different port. (ex 20065:25565 to use port 20065)
 
 **--restart**: (optional) "unless-stopped" will restart the container unless the container (not the node/system) is restarted. 
 
