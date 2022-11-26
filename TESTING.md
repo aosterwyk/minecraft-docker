@@ -1,0 +1,4 @@
+- stock jar stock memory
+- stock jar custom memory 
+- custom jar stock memory 
+- custom jar custom memory
