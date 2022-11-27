@@ -28,6 +28,7 @@ docker run --name=minecraft \
 --restart=unless-stopped \
 -v minecraft-vol:/opt/minecraft \
 -p 25565:25565 \
+-e EULA=TRUE \ 
 -e SERVERJAR=fabric-server-mc.jar \
 -e SERVERMEMORY=4 \
 <image>
@@ -41,9 +42,11 @@ docker run --name=minecraft \
 
 **--restart**: (optional) "unless-stopped" will restart the container unless the container (not the node/system) is restarted. 
 
-**-e**: (optional) Environment variables. Use -e for each variable if using multiple. Do not use -e if you do not want to change any of these settings.
+**-e**: Environment variables. Use -e for each variable if using multiple. Do not use -e if you do not want to change any of these settings.
 
 ### Environment variables
+
+`EULA=TRUE` Set this to accept the EULA. Server will not run is this is not set to TRUE.
 
 `SERVERJAR=<.jar filename>` Set this if you'd like to run a .jar other than server.jar. This jar must be copied to the docker volume mounted with -v.
 

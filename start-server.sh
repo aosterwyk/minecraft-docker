@@ -1,6 +1,12 @@
 #!/bin/sh
 # java -Xmx3G -Xms2G -jar ./fabric-server-mc.jar nogui
 
+if [ -z $EULA ] || [ "$EULA" != "TRUE" ] 
+then
+    echo "Please accept the EULA (-e EULA=TRUE) to start the server."
+    exit
+fi
+
 if [ -z $SERVERJAR ]
 then
     SERVERJARFILENAME="server.jar"
@@ -19,6 +25,5 @@ else
     echo "Max memory set to ${SERVERMEM}GB."
 fi
 
-# echo "Running /opt/minecraft/$SERVERJARFILENAME"
+echo "Running /opt/minecraft/$SERVERJARFILENAME with ${SERVERMEM}GB memory."
 java "-Xmx${SERVERMEM}G" "-Xms${SERVERMEM}G" -jar "/opt/minecraft/${SERVERJARFILENAME}" nogui
-# java -Xmx3G -Xms3G -jar /opt/minecraft/server.jar nogui
